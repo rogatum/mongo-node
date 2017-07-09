@@ -1,0 +1,20 @@
+{
+  "db" : {
+    "uri" : "mongodb://[user]:[pass]@[host]:[port]/[db]",
+    "settings" : {
+        "useMongoClient": true,
+        "autoReconnect": true,
+        "poolSize": 5,
+        "reconnectTries": 20,
+        "reconnectInterval": 3000
+      }
+  },
+  "server" : {
+    "port": 3000,
+    "cors" : {
+      "domains" : "*",
+      "headers" : "Content-Type",
+      "methods" : "GET,PUT,POST,DELETE,OPTIONS"
+    }
+  }
+}
