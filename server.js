@@ -18,7 +18,7 @@
     api.use(cors);
     api.use(bodyParser.urlencoded({ extended: true }));
     api.use(bodyParser.json());
-    if(properties.dev) { app.use(morgan('dev')); };
+    if(properties.dev) { api.use(morgan('dev')); };
 
     collections.register(api);
 
