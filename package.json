@@ -1,0 +1,28 @@
+{
+  "name": "rogatum-mongo-node",
+  "version": "1.0.0",
+  "description": "NodeJS Rest API Starter - Mongoose - MongodB Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogatum/mongo-node.git"
+  },
+  "author": "Rob Sedgwick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogatum/mongo-node/issues"
+  },
+  "homepage": "https://github.com/rogatum/mongo-node#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.6"
+  }
+}
