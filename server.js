@@ -5,6 +5,7 @@
       api = require('express')(),
       port = process.env.PORT || properties.server.port,
       bodyParser = require('body-parser'),
+      morgan      = require('morgan'),
       cors = function(req, res, next) {
         res.header('Access-Control-Allow-Origin', properties.server.cors.domains);
         res.header('Access-Control-Allow-Methods', properties.server.cors.methods);
@@ -17,6 +18,7 @@
     api.use(cors);
     api.use(bodyParser.urlencoded({ extended: true }));
     api.use(bodyParser.json());
+    if(properties.dev) { app.use(morgan('dev')); };
 
     collections.register(api);
 

@@ -16,5 +16,6 @@
       "headers" : "Content-Type",
       "methods" : "GET,PUT,POST,DELETE,OPTIONS"
     }
-  }
+  },
+  "dev" : true
 }
